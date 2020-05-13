@@ -6,17 +6,27 @@ DONE - Update LinkedIn profile
 
 Update portfolio featuring project 1 and two exemplary homework assignments:
 -Portfolio:
-    -Create wireframe
-        -Include name at top of page
-        -Include links to GitHub profile & LinkedIn page
-        -Include email address and phone number
-        -Include link to a PDF on my CV
-        -Link to same project repo's as on my github page
-            -Project title
-            -Link to the deployed version
-            -Link to the GitHub repository
-            -Screenshot of the deployed application
-        -Some note about when it was last updated
+    DONE-Create wireframe
+        DONE -Include name at top of page
+        DONE -Include links to GitHub profile & LinkedIn page
+        DONE -Include email address
+        DONE -Include link to a PDF on my CV
+        DONE -Link to same project repo's as on my github page
+            DONE -Project title
+            DONE -Link to the deployed application
+            DONE -Link to the GitHub repository
+            DONE -Screenshot of the deployed application
+        DONE -Some note about when the portfolio was last updated
+
+    DONE -Create required files
+    DONE -Create basic structure of page (based off wireframe)
+    -Add the main content
+    -Add functionality for links
+    -Allow user to download CV
+    -Make responsive on larger screen size
+    -Add hover styling on anything that can be clicked
+    -Populate the README
+    -
 
 
 Link to portfolio on my LinkedIn page

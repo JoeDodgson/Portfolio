@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'DM Mono', monospace;
+    padding-top: 30px;
+}
+
+main {
+    margin: 10px;
+}
+
+section {
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+h1, h2, h3, h4 {
+    color: #39ff14;
+    font-family: 'DM Mono', monospace;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 0;
+    border: 1px solid white;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 10px;
+}
+
+p, li {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+div {
+    clear: both;
+}
+
+ul {
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+}
+
+li {
+    margin:  0 0 10px 0;
+}
+
+.header-title, .header-subtitle, h2 {
+    text-align: center;
+}
+
+.icons-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+i {
+    color: white;
+    font-size: 18px;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#intro-image, #university-image, #experience-image {
+    float: right;
+}
+
+#intro-image {
+    border-radius: 50%;
+}
+
+#arup-image, #interests-image {
+    float: left;
+    margin-bottom: 0;
+}
+
+.about-article {
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#download-cv {
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: grey;
+}
+
+.fa-download {
+    color: black;
+}
+
+#download-cv:hover {
+    color: white;
+    background-color: #39ff14;
+}
+
+.fa-download:hover {
+    color: black;
+}

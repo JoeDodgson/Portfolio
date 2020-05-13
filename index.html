@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
 </head>
 <body>
     <header>
-        <div id="social-icons">
-            <i>
-                
-            </i>
-            <i>
-                
-            </i>
+        <div class="icons-container">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github-square"></i>
         </div>
-        <div>
+        <div class="header-title">
             <h1>JOE DODGSON</h1>
         </div>
-        <div>
+        <div class="header-subtitle">
             <p>Full stack web developer, based in Birmingham (UK)</p>
         </div>
         <nav id="top-navbar">
@@ -30,88 +30,106 @@
         </nav>
     </header>
     
-    <section id="about-me">
-        <div>
-            <h2>About me</h2>
-        </div>
-        <div id="intro">
-            <img src="" alt="Joe Dodgson">
-            <p>Some introductory text about me</p>
-        </div>
-        <article class="about-article" id="background">
-            <h3>Background</h3>
-            <p>Background text</p>
-            <img src="" alt="Civil Engineering">
-        </article>
-        <article class="about-article" id="education">
-            <h3>Education</h3>
-            <p>Education text</p>
-            <img src="" alt="Graduation">
-            <button id="download-cv">Download CV</button>
-        </article>
-        <article class="about-article" id="experience">
-            <h3>Experience</h3>
-            <p>Experience text</p>
-            <img src="" alt="Experience">
-        </article>
-        <article class="about-article" id="interests">
-            <h3>Interests</h3>
-            <p>Interests text</p>
-            <img src="" alt="Interests">
-        </article>
-    </section>
-
-    <section id="projects">
-        <div>
-            <h2>My portfolio</h2>
-        </div>
-        <article class="project">
-            <h3>Bookworm</h3>
-            <p>About the project...</p>
-            <img src="" alt="Screenshot">
-            <button class="site-link">Go to site</button>
-            <button class="repo-link">Go to repo</button>
-        </article>
-        <article class="project">
-            <h3>Weather dashboard</h3>
-            <p>About the project...</p>
-            <img src="" alt="Screenshot">
-            <button class="site-link">Go to site</button>
-            <button class="repo-link">Go to repo</button>
-        </article>
-        <article class="project">
-            <h3>Coding quiz</h3>
-            <p>About the project...</p>
-            <img src="" alt="Screenshot">
-            <button class="site-link">Go to site</button>
-            <button class="repo-link">Go to repo</button>
-        </article>
-        <article class="project">
-            <h3>Password generator</h3>
-            <p>About the project...</p>
-            <img src="" alt="Screenshot">
-            <button class="site-link">Go to site</button>
-            <button class="repo-link">Go to repo</button>
-        </article>
-    </section>
-    
-    <section id="contact">
-        <div>
-            <h2>Contact me</h2>
-        </div>
-        <div id="email-contact">
-            <h4>Email:</h4>
-            <a href="j.dodgson@live.co.uk"></a>
-        </div>
-        <div id="email-contact">
-            <h4>Socials:</h4>
-            <div class="icons-container">
-                <i class="linkedin-icon"></i>
-                <i class="github-icon"></i>
+    <main>
+        <section id="about-me">
+            <div>
+                <h2>About me</h2>
             </div>
-        </div>
+            <div id="intro">
+                <img id="intro-image" src="./assets/images/Joe-work-headshot.jpg" alt="Joe Dodgson">
+                <h3 id="intro-heading">Hi and welcome to my portfolio.</h3>
+                <p>I am currently developing skills as a full stack web developer at the University of Birmingham's Coding Bootcamp.</p>
+                <p>This website is a portfolio of the projects I have either contributed to or built myself.</p>
+            </div>
+            <article class="about-article" id="background">
+                <h3>Background</h3>
+                <img id="arup-image" src="./assets/images/Arup-work.JPG" alt="Working at Arup">
+                <p>After university, I worked as a Rail Engineer for 4 years, but in January 2020 I made the decision to retrain as a web developer to pursue a career in software development. I love applying mathematical and logical reasoning to solve probelms which is what drew me into software development.</p>
+            </article>
+            <article class="about-article" id="education">
+                <h3>Education</h3>
+                <img id="university-image" src="./assets/images/Joe-graduation.jpg" alt="Graduation">
+                <ul>
+                    <li>Coding Bootcamp Full stack programme at University of Birmingham (2020)</li>
+                    <li>MEng Civil Engineering at University of Nottingham - First class honours</li>
+                </ul>
+            </article>
+            <article class="about-article" id="experience">
+                <h3>Experience</h3>
+                <img id="experience-image" src="./assets/images/Joe-InSAR-research-project.jpg" alt="Experience">
+                <ul>
+                    <li>4 years - Rail Engineer / Embedded Developer, Arup (2016-2020)</li>
+                    <li>3 months - Research Placement, University of Nottingham (2015)</li>
+                    <li>1 year - Undergraduate Design Engineer, North Midland Construction (2014-2015)</li>
+                </ul>
+                <div class="button-container">
+                    <button id="download-cv"><i class="fas fa-download"></i> DOWNLOAD CV</button>
+                </div>
+            </article>
+            <article class="about-article" id="interests">
+                <h3>Interests</h3>
+                <img id="interests-image" src="./assets/images/Villa-park-flag.jpg" alt="Interests">
+                <p>Outside of work my passions are hiking, bouldering, going to music gigs and watching football. I'm an Aston Villa season ticket holder and my lifelong ambition is to 'do the 92' (visit every ground in the English Football Leage).</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <div>
+                <h2>My portfolio</h2>
+            </div>
+            <article class="project">
+                <h3>Bookworm</h3>
+                <p>Bookworm is a webpage for book lovers to find information about books and add them to their read list. Users select a target read date for each book they add to their read list.</p>
+                <p>Technologies adopted:</p>
+                <ul>
+                    <li>AJAX calls to retrieving API data</li>
+                    <li>AJAX calls to retrieving API data</li>
+                </ul>
+                <img src="" alt="Screenshot">
+                <button class="site-link">Go to site</button>
+                <button class="repo-link">Go to repo</button>
+            </article>
+            <article class="project">
+                <h3>Weather dashboard</h3>
+                <p>About the project...</p>
+                <img src="" alt="Screenshot">
+                <button class="site-link">Go to site</button>
+                <button class="repo-link">Go to repo</button>
+            </article>
+            <article class="project">
+                <h3>Coding quiz</h3>
+                <p>About the project...</p>
+                <img src="" alt="Screenshot">
+                <button class="site-link">Go to site</button>
+                <button class="repo-link">Go to repo</button>
+            </article>
+            <article class="project">
+                <h3>Password generator</h3>
+                <p>About the project...</p>
+                <img src="" alt="Screenshot">
+                <button class="site-link">Go to site</button>
+                <button class="repo-link">Go to repo</button>
+            </article>
+        </section>
         
-    </section>
+        <section id="contact">
+            <div>
+                <h2>Contact me</h2>
+            </div>
+            <div id="email-contact">
+                <h4>Email:</h4>
+                <a href="j.dodgson@live.co.uk"></a>
+            </div>
+            <div id="email-contact">
+                <h4>Socials:</h4>
+                <div class="icons-container">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github-square"></i>
+                </div>
+            </div>
+            
+        </section>
+    </main>
 
     <footer>
         <p>&copy; Joe Dodgson 2020</p>
