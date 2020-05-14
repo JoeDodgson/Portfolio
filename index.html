@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="icons-container">
+        <div id="header-icons-container">
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-github-square"></i>
         </div>
@@ -69,7 +69,7 @@
             <article class="about-article" id="interests">
                 <h3>Interests</h3>
                 <img id="interests-image" src="./assets/images/Villa-park-flag.jpg" alt="Interests">
-                <p>Outside of work my passions are hiking, bouldering, going to music gigs and watching football. I'm an Aston Villa season ticket holder and my lifelong ambition is to 'do the 92' (visit every ground in the English Football Leage).</p>
+                <p>Outside of work my passions are hiking, bouldering, going to music gigs and watching football. I'm an Aston Villa season ticket holder and my lifelong ambition is to 'do the 92' (visit every ground in the English Football League).</p>
             </article>
         </section>
 
@@ -79,36 +79,58 @@
             </div>
             <article class="project">
                 <h3>Bookworm</h3>
-                <p>Bookworm is a webpage for book lovers to find information about books and add them to their read list. Users select a target read date for each book they add to their read list.</p>
+                <p>A webpage for book lovers to find information about books and add them to their read list. Users select a target read date for each book they add to their read list.</p>
                 <p>Technologies adopted:</p>
                 <ul>
-                    <li>AJAX calls to retrieving API data</li>
-                    <li>AJAX calls to retrieving API data</li>
+                    <li>AJAX calls to retrieve API data</li>
+                    <li>CSS Grid Layout framework</li>
+                    <li>jQuery JavaScript library</li>
                 </ul>
-                <img src="" alt="Screenshot">
-                <button class="site-link">Go to site</button>
-                <button class="repo-link">Go to repo</button>
+                <div class="button-container">
+                    <button class="site-link">SEE SITE</button>
+                    <button class="repo-link">SEE REPO</button>
+                </div>
             </article>
             <article class="project">
                 <h3>Weather dashboard</h3>
-                <p>About the project...</p>
-                <img src="" alt="Screenshot">
-                <button class="site-link">Go to site</button>
-                <button class="repo-link">Go to repo</button>
+                <p>The user searches for any city to see the current weather and a 5 day weather forecast. The page stores and displays the user's searched cities.</p>
+                <p>Technologies adopted:</p>
+                <ul>
+                    <li>AJAX calls to retrieve API data</li>
+                    <li>CSS Grid Layout framework</li>
+                    <li>jQuery JavaScript library</li>
+                </ul>
+                <div class="button-container">
+                    <button class="site-link">SEE SITE</button>
+                    <button class="repo-link">SEE REPO</button>
+                </div>
             </article>
             <article class="project">
                 <h3>Coding quiz</h3>
-                <p>About the project...</p>
-                <img src="" alt="Screenshot">
-                <button class="site-link">Go to site</button>
-                <button class="repo-link">Go to repo</button>
+                <p>A multiple choice coding quiz, including a page which displays the Highscores. The user submits their score which is added to other scores in the local storage.</p>
+                <p>Technologies adopted:</p>
+                <ul>
+                    <li>AJAX calls to retrieve API data</li>
+                    <li>CSS Grid Layout framework</li>
+                    <li>jQuery JavaScript library</li>
+                </ul>
+                <div class="button-container">
+                    <button class="site-link">SEE SITE</button>
+                    <button class="repo-link">SEE REPO</button>
+                </div>
             </article>
             <article class="project">
                 <h3>Password generator</h3>
-                <p>About the project...</p>
-                <img src="" alt="Screenshot">
-                <button class="site-link">Go to site</button>
-                <button class="repo-link">Go to repo</button>
+                <p>Generates a random password for a user based character type selection criteria. The user selects character types to include in the password through a series of prompts.</p>
+                <p>Technologies adopted:</p>
+                <ul>
+                    <li>Event listeners to trigger functions</li>
+                    <li>Use of alerts, confirms and prompts</li>
+                </ul>
+                <div class="button-container">
+                    <button class="site-link">SEE SITE</button>
+                    <button class="repo-link">SEE REPO</button>
+                </div>
             </article>
         </section>
         
@@ -116,18 +138,19 @@
             <div>
                 <h2>Contact me</h2>
             </div>
-            <div id="email-contact">
-                <h4>Email:</h4>
-                <a href="j.dodgson@live.co.uk"></a>
-            </div>
-            <div id="email-contact">
-                <h4>Socials:</h4>
-                <div class="icons-container">
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-github-square"></i>
+            <div id="contact-container">
+                <div id="email-contact">
+                    <h4>Email:</h4>
+                    <a href="j.dodgson@live.co.uk">j.dodgson@live.co.uk</a>
+                </div>
+                <div id="socials-contact">
+                    <h4>Socials:</h4>
+                    <div id="contact-icons-container">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-github-square"></i>
+                    </div>
                 </div>
             </div>
-            
         </section>
     </main>
 

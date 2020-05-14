@@ -15,8 +15,11 @@ section {
 }
 
 h1, h2, h3, h4 {
-    color: #39ff14;
     font-family: 'DM Mono', monospace;
+}
+
+h1, h2, h3 {
+    color: #39ff14;
 }
 
 h1 {
@@ -31,6 +34,12 @@ h2 {
 h3 {
     font-size: 1.15em;
     margin: 10px;
+}
+
+h4 {
+    font-size: 1.15em;
+    text-align: center;
+    margin: 5px 0 0 0;
 }
 
 p, li {
@@ -59,7 +68,7 @@ li {
     text-align: center;
 }
 
-.icons-container {
+#header-icons-container {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -89,7 +98,7 @@ img {
     margin-bottom: 0;
 }
 
-.about-article {
+.about-article, .project {
     border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
 
@@ -99,7 +108,7 @@ img {
     margin-bottom: 20px;
 }
 
-#download-cv {
+#download-cv, .site-link, .repo-link {
     color: black;
     font-size: 12px;
     padding: 5px 10px;
@@ -108,15 +117,57 @@ img {
     background-color: grey;
 }
 
+.site-link, .repo-link {
+    margin: 0 10px;
+}
+
 .fa-download {
     color: black;
 }
 
-#download-cv:hover {
+#download-cv:hover, .site-link:hover, .repo-link:hover {
     color: white;
     background-color: #39ff14;
 }
 
 .fa-download:hover {
     color: black;
+}
+
+#contact-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#email-contact {
+    width: 60%;
+}
+
+#socials-contact {
+    width: 40%;
+}
+
+#email-contact a {
+    font-size: 0.75em;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+
+#contact-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-icons-container i {
+    margin: 0 5px;
+}
+
+
+footer p {
+    text-align: center;
+    color:  #39ff14;
 }
