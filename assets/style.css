@@ -6,12 +6,13 @@ body {
 }
 
 main {
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 700px; 
 }
 
 section {
-    margin-bottom: 10px;
-    border: 2px solid white;
+    margin-bottom: 20px 0;
+    /* border: 2px solid white; */
 }
 
 h1, h2, h3, h4 {
@@ -28,7 +29,7 @@ h1 {
 
 h2 {
     margin: 0;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 h3 {
@@ -74,9 +75,13 @@ li {
     right: 10px;
 }
 
-i {
+a {
     color: white;
     font-size: 18px;
+}
+
+a:hover {
+    color:  #39ff14;
 }
 
 img {
@@ -152,9 +157,13 @@ img {
 #email-contact a {
     font-size: 0.75em;
     margin-bottom: 5px;
-    text-decoration: underline;
     text-align: center;
     display: block;
+    color: rgb(111, 111, 255)
+}
+
+#email-contact a:hover {
+    text-decoration: underline;
 }
 
 #contact-icons-container {
@@ -162,10 +171,10 @@ img {
     justify-content: center;
 }
 
-#contact-icons-container i {
+#contact-icons-container a {
     margin: 0 5px;
-}
 
+}
 
 footer p {
     text-align: center;
