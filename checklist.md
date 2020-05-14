@@ -20,8 +20,8 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
 
     DONE -Create required files
     DONE -Create basic structure of page (based off wireframe)
-    -Add the main content
-    -Add functionality for links
+    DONE -Add the main content
+    DONE -Add functionality for links
     -Allow user to download CV
     -Make responsive on larger screen size
     -Add hover styling on anything that can be clicked
