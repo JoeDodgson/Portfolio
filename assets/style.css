@@ -23,12 +23,12 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h2 {
+    font-size: 1.75em;
     margin: 0;
-    /* border: 1px solid white; */
 }
 
 h3 {
@@ -72,7 +72,7 @@ li {
 
 a {
     color: white;
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 a:hover {
@@ -84,6 +84,7 @@ img {
     height: auto;
     padding: 10px;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .project-image {
@@ -101,11 +102,7 @@ img {
 
 #arup-image, #experience-image {
     float: left;
-    margin-bottom: 0;
-}
-
-#experience-image {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .about-article, .project {
@@ -120,7 +117,7 @@ img {
 
 #download-cv, .site-link, .repo-link {
     color: black;
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 5px 10px;
     border: 0px;
     border-radius: 12px;
@@ -193,9 +190,75 @@ footer p {
     display: block;
 }
 
-@media (min-width: 376px) and (max-width: 575px) {
+@media (min-width: 376px) {
     img {
+        width: 40%;
+    }
+
+    #email-contact, #socials-contact {
         width: 50%;
+    }
+
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 1.95em;
+    }
+
+    h3, h4 {
+        font-size: 1.3em;
+    }
+
+    a {
+        font-size: 1.25em;
+    }
+
+    footer p {
+        font-size: 1.0em;
+    }
+
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 0.9em;
+    }
+
+    #email-contact a {
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3, h4 {
+        font-size: 1.45em;
+    }
+
+    a {
+        font-size: 1.35em;
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 1.0em;
+    }
+
+    #email-contact a {
+        font-size: 0.95em;
     }
 }
 
@@ -203,6 +266,43 @@ footer p {
     .project {
         width: 50%;
         float: left;
-        height: 600px;
+        height: 750px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .project-description {
+        height: 176px;
+    }
+
+    .technologies-list {
+        height: 154px;
+    }
+
+    h1 {
+        font-size: 2.75em;
+    }
+    
+    h2 {
+        font-size: 2.4em;
+    }
+    
+    h3, h4 {
+        font-size: 1.6em;
+    }
+    
+    a {
+        font-size: 1.5em;
+    }
+    
+    footer p {
+        font-size: 1.25em;
+    }
+    
+    p, li, #download-cv, .site-link, .repo-link {
+        font-size: 1.1em;
+    }
+    
+    #email-contact a {
+        font-size: 1.05em;
     }
 }

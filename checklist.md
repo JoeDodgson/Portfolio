@@ -25,7 +25,7 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
     DONE -Allow user to download CV
     DONE -Add hover styling on anything that can be clicked
     DONE -Add screenshots of deployed applications
-    -Make responsive on larger screen size
+    DONE -Make responsive on larger screen size
     -Add navigation functionality
     -Populate the README
 
