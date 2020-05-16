@@ -22,11 +22,12 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
     DONE -Create basic structure of page (based off wireframe)
     DONE -Add the main content
     DONE -Add functionality for links
-    -Allow user to download CV
+    DONE -Allow user to download CV
+    DONE -Add hover styling on anything that can be clicked
+    DONE -Add screenshots of deployed applications
     -Make responsive on larger screen size
-    -Add hover styling on anything that can be clicked
+    -Add navigation functionality
     -Populate the README
-    -
 
 
 Link to portfolio on my LinkedIn page

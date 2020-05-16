@@ -6,8 +6,7 @@ body {
 }
 
 main {
-    margin: 10px auto;
-    max-width: 700px; 
+    margin: 20px;
 }
 
 section {
@@ -52,10 +51,6 @@ p {
     padding: 10px;
 }
 
-div {
-    clear: both;
-}
-
 ul {
     padding: 10px 10px 10px 30px;
     margin: 0;
@@ -85,9 +80,13 @@ a:hover {
 }
 
 img {
-    width: 30%;
+    width: 100%;
     height: auto;
-    margin: 10px;
+    padding: 10px;
+}
+
+#intro-image {
+    width: 40%;
 }
 
 #intro-image, #university-image, #experience-image {
@@ -177,6 +176,9 @@ img {
 }
 
 footer p {
+    font-size: 0.9em;
     text-align: center;
     color:  #39ff14;
 }
+
+@media (min-width:)
