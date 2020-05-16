@@ -6,8 +6,7 @@ body {
 }
 
 main {
-    margin: auto;
-    max-width: 800px;
+    margin: 30px;
 }
 
 section {
@@ -319,5 +318,10 @@ footer p {
         width: auto;
         margin: auto;
         display: flex;
+    }
+
+    main {
+        margin: 30px auto;
+        max-width: 807px;
     }
 }
