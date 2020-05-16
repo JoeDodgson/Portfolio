@@ -6,12 +6,12 @@ body {
 }
 
 main {
-    margin: 20px;
+    margin: auto;
+    max-width: 800px;
 }
 
 section {
-    margin-bottom: 20px 0;
-    /* border: 2px solid white; */
+    margin: 20px 0;
 }
 
 h1, h2, h3, h4 {
@@ -94,6 +94,7 @@ img {
 #intro-image {
     width: 40%;
     border-radius: 50%;
+    margin-left: 10px;
 }
 
 #intro-image, #university-image {
@@ -123,6 +124,11 @@ img {
     border-radius: 12px;
     background-color: grey;
 }
+
+#download-cv {
+    margin-top: 20px;
+}
+
 
 .site-link, .repo-link {
     margin: 0 10px;
@@ -266,7 +272,7 @@ footer p {
     .project {
         width: 50%;
         float: left;
-        height: 750px;
+        min-height: 775px;
         border: 1px solid rgba(128, 128, 128, 0.5);
     }
 
@@ -304,5 +310,14 @@ footer p {
     
     #email-contact a {
         font-size: 1.05em;
+    }
+}
+
+@media (min-width: 867px) {
+    .project-image {
+        height: 275px;
+        width: auto;
+        margin: auto;
+        display: flex;
     }
 }
