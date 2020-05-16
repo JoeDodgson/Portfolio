@@ -83,23 +83,29 @@ img {
     width: 100%;
     height: auto;
     padding: 10px;
+    display: inline-block;
+}
+
+.project-image {
+    width: 100%;
 }
 
 #intro-image {
     width: 40%;
-}
-
-#intro-image, #university-image, #experience-image {
-    float: right;
-}
-
-#intro-image {
     border-radius: 50%;
 }
 
-#arup-image, #interests-image {
+#intro-image, #university-image {
+    float: right;
+}
+
+#arup-image, #experience-image {
     float: left;
     margin-bottom: 0;
+}
+
+#experience-image {
+    margin-right: 20px;
 }
 
 .about-article, .project {
@@ -181,4 +187,22 @@ footer p {
     color:  #39ff14;
 }
 
-@media (min-width:)
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+    img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .project {
+        width: 50%;
+        float: left;
+        height: 600px;
+    }
+}
