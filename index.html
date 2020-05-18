@@ -22,16 +22,34 @@
         <div class="header-subtitle">
             <p>Full stack web developer, based in Birmingham (UK)</p>
         </div>
-        <nav id="top-navbar">
-
+        <nav id="navbar">
+            <div id="nav-link-container" class="clearfix">
+                <div id="nav-spacing">
+                    <p>.</p>
+                </div>
+                <div id="nav-about" class="nav-link nav-current">
+                    <p>About</p>
+                </div>
+                <div id="nav-portfolio" class="nav-link nav-not-current">
+                    <p>Portfolio</p>
+                </div>
+                <div id="nav-contact" class="nav-link nav-not-current">
+                    <p>Contact</p>
+                </div>
+                <div id="nav-fill">
+                    <p>.</p>
+                </div>
+            </div>
+            <div id="navbar-fade"></div>
         </nav>
-        <nav id="side-navbar">
+        <div id="navbar-spacing" class="sticky"></div>
+        <!-- <nav id="side-navbar">
 
-        </nav>
+        </nav> -->
     </header>
     
     <main>
-        <section class="clearfix" id="about-me">
+        <section class="clearfix" id="about">
             <div>
                 <h2>About me</h2>
             </div>
@@ -70,7 +88,7 @@
             </article>
         </section>
 
-        <section class="clearfix" id="projects">
+        <section class="clearfix" id="portfolio">
             <div>
                 <h2>My portfolio</h2>
             </div>
@@ -156,6 +174,8 @@
     <footer>
         <p>&copy; Joe Dodgson 2020</p>
     </footer>
-    
+
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/script.js"></script>
 </html>
