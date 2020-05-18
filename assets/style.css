@@ -1,3 +1,4 @@
+/* HTML elements */
 body {
     background-color: black;
     color: white;
@@ -59,10 +60,25 @@ li {
     margin:  0 0 10px 0;
 }
 
-main, footer, #header-icons-container, #header-title-text, #header-subtitle-text, #navbar {
-    transition: opacity 2500ms;
+img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
+a {
+    color: white;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color:  #39ff14;
+}
+
+
+/* Header */
 .header-title, .header-subtitle, h2 {
     text-align: center;
 }
@@ -81,6 +97,8 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
     right: 10px;
 }
 
+
+/* Navbar */
 .nav-link {
     width: 27.5%;
     float: left;
@@ -89,7 +107,6 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
 }
 
 .nav-current {
-    /* background-image: linear-gradient(rgb(150, 150, 150), rgb(75, 75, 75)); */
     border: 1px solid #39ff14;
     border-bottom: 1px solid black;
 }
@@ -105,7 +122,6 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
 #navbar-fade {
     height: 75px;
     margin: auto;
-    /* background-image: linear-gradient(black, rgba(0, 0, 0, 0)); */
 }
 
 #nav-spacing {
@@ -113,7 +129,6 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
     float: left;
     color: black;
     border-bottom: 1px solid #39ff14;
-    /* height: 1px; */
 }
 
 #nav-fill {
@@ -126,33 +141,8 @@ main, footer, #header-icons-container, #header-title-text, #header-subtitle-text
     height: 120px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
 
-a {
-    color: white;
-    font-size: 1.1em;
-}
-
-a:hover {
-    color:  #39ff14;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.project-image {
-    width: 100%;
-}
-
+/* About section */
 #intro-image {
     width: 40%;
     border-radius: 50%;
@@ -191,7 +181,6 @@ img {
     margin-top: 20px;
 }
 
-
 .site-link, .repo-link {
     margin: 0 10px;
 }
@@ -209,6 +198,14 @@ img {
     color: black;
 }
 
+
+/* Portfolio section */
+.project-image {
+    width: 100%;
+}
+
+
+/* Contact section */
 #contact-container {
     width: 100%;
     margin: 0;
@@ -246,12 +243,16 @@ img {
 
 }
 
+
+/* Footer */
 footer p {
     font-size: 0.9em;
     text-align: center;
     color:  #39ff14;
 }
 
+
+/* Styling classes applied throughout page */
 .clearfix::after {
     content: "";
     clear: both;
@@ -262,6 +263,20 @@ footer p {
     opacity: 0;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
+/* Transitions */
+main, footer, #header-icons-container, #header-title-text, #header-subtitle-text, #navbar {
+    transition: opacity 2500ms;
+}
+
+
+/* Responsiveness */
 @media (min-width: 376px) {
     img {
         width: 40%;

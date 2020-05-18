@@ -29,7 +29,7 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
     DONE -Add navigation functionality
     DONE -Add type out functionality to header
     DONE -Move variable declaration to top of JS file
-    -Populate the README
+    DONE -Populate the README
     -Comment everything
 
 
