@@ -30,11 +30,12 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
     DONE -Add type out functionality to header
     DONE -Move variable declaration to top of JS file
     DONE -Populate the README
-    -Comment everything
+    DONE -Comment everything
+    DONE -Add title to document
 
 
-Link to portfolio on my LinkedIn page
+DONE Link to portfolio on my LinkedIn page
 
-Link to portfolio on my github page
+DONE Link to portfolio on my github page
 
 DONE - Add links to deployed applications on my pinned github repo READMEs
