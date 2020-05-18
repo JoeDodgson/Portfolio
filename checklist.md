@@ -26,8 +26,11 @@ Update portfolio featuring project 1 and two exemplary homework assignments:
     DONE -Add hover styling on anything that can be clicked
     DONE -Add screenshots of deployed applications
     DONE -Make responsive on larger screen size
-    -Add navigation functionality
+    DONE -Add navigation functionality
+    DONE -Add type out functionality to header
+    DONE -Move variable declaration to top of JS file
     -Populate the README
+    -Comment everything
 
 
 Link to portfolio on my LinkedIn page

@@ -59,6 +59,10 @@ li {
     margin:  0 0 10px 0;
 }
 
+main, footer, #header-icons-container, #header-title-text, #header-subtitle-text, #navbar {
+    transition: opacity 2500ms;
+}
+
 .header-title, .header-subtitle, h2 {
     text-align: center;
 }
@@ -252,6 +256,10 @@ footer p {
     content: "";
     clear: both;
     display: block;
+}
+
+.vis-hidden {
+    opacity: 0;
 }
 
 @media (min-width: 376px) {
