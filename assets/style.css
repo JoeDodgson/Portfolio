@@ -11,7 +11,7 @@ main {
 }
 
 section {
-    margin: 20px 0;
+    margin: 90px 0;
 }
 
 h1, h2, h3, h4 {
@@ -123,10 +123,6 @@ a:hover {
     background: black;
 }
 
-#navbar-fade {
-    height: 75px;
-    margin: auto;
-}
 
 #nav-spacing {
     width: 30px;
@@ -141,8 +137,9 @@ a:hover {
     border-bottom: 1px solid #39ff14;
 }
 
+/* Height to match #navbar for when the sticky class is removed */
 #navbar-spacing {
-    height: 120px;
+    height: 48px;
 }
 
 
