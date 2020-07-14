@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-size: 1.75em;
-    margin: 0;
+    margin: 0 0 50px 0;
 }
 
 h3 {
@@ -68,9 +68,9 @@ img {
     margin-bottom: 10px;
 }
 
-#header-icons-container a {
-    color: white;
-    font-size: 1.3em;
+button {
+    background-color: unset;
+    border: unset;
 }
 
 a:hover {
@@ -80,6 +80,10 @@ a:hover {
 
 
 /* Header */
+#header-icons-container a {
+    color: white;
+    font-size: 1.3em;
+}
 .header-title, .header-subtitle, h2 {
     text-align: center;
 }
