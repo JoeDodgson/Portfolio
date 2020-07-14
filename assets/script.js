@@ -17,11 +17,7 @@ const headerIcons = $("#header-icons-container");
 const footerCopyright = $("footer p");
 
 // Declare variables for typewrite function
-let i = 0;
-let tWElement;
-let elementText = "";
-let elementTextBuilder = "";
-let speed = 200;
+const speed = 200;
 
 // Declare other variables
 let navbarOffset;
@@ -31,18 +27,33 @@ let contactOffset;
 let bodyHeight;
 let windowHeight;
 let navbarHeight;
-let unhidePage = false;
 
-// When the document loads, execute stickyNavbar
-$(document).ready( function() {
-    tWElement = headerTitleText;
-    typeWriterPrepare();
+$(document).ready( () => {
+    // When the document loads, set the scroll position to the top of the page
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+
+    // Execute display update functions
     stickyNavbar();
     updateNavbar();
     updateFooter();
+
+    // Store the header title text
+    const elementText = headerTitleText.html();
+
+    // Remove the header title text and unhide it
+    headerTitleText.html("");
+    headerTitleText.removeClass("vis-hidden");
+
+    // Call the typeWriter function using the title text and element
+    typeWriter(0, headerTitleText, elementText, "");
 });
 
-function unhidePageNow() {
+// Function for unhiding sections of the webpage
+const unhidePage = () => {
     headerIcons.removeClass("vis-hidden");
     headerSubtitleText.removeClass("vis-hidden");
     navbar.removeClass("vis-hidden");
@@ -50,32 +61,21 @@ function unhidePageNow() {
     footer.removeClass("vis-hidden");
 }
 
-// Declare typewriter function
-function typeWriterPrepare() {
-    elementText = tWElement.html();
-    tWElement.html("");
-    tWElement.removeClass("vis-hidden");
-    typeWriterWrite();
-}
-
-function typeWriterWrite() {
-    if (i < elementText.length) {
-        elementTextBuilder += elementText.charAt(i);
-        tWElement.html(elementTextBuilder);
+// A recursive function that sets HTML content of the title one character at a time at 200ms intervals
+const typeWriter = (i, element, fullText, constructedText) => {
+    if (i < fullText.length) {
+        constructedText += fullText.charAt(i);
+        element.html(constructedText);
         i++;
-        setTimeout(typeWriterWrite, speed);
-    }
-    else {
-        i = 0;
-        unhidePage = true;
-    }
-    if(unhidePage === true){
-        unhidePageNow();
+        setTimeout(typeWriter, speed, i, element, fullText, constructedText);
+    } else {
+        // When the whole title is displayed, unhide the rest of the page
+        unhidePage();
     }
 }
 
 // When the user scrolls the page, execute stickyNavbar
-window.onscroll = function() {
+window.onscroll = () => {
     stickyNavbar();
     updateNavbar();
 };
@@ -84,7 +84,7 @@ window.onscroll = function() {
 navbarOffset = navbar.offset().top;
 
 // Define stickyNavbar function
-function stickyNavbar() {
+const stickyNavbar = () => {
 
     // Add sticky class to navbar when you reach its scroll position 
     if (window.pageYOffset > navbarOffset) {
@@ -103,7 +103,7 @@ function stickyNavbar() {
 }
 
 // Define updateNavbar function
-function updateNavbar() {
+const updateNavbar = () => {
 
     // Get the offset position of each section of the page
     portfolioOffset = portfolio.offset().top;
@@ -144,12 +144,13 @@ function updateNavbar() {
     }
 }
 
-function updateFooter() {
+// Function to update the footer using the current year
+const updateFooter = () => {
     const currentYear = (new Date().getFullYear());
     footerCopyright.html(`© Joe Dodgson ${currentYear}`);
 }
 
-navAbout.click(function() {
+navAbout.click(() => {
 
     // Get the height of the navLinkContainer
     navbarHeight = navLinkContainer[0].clientHeight;
@@ -165,7 +166,7 @@ navAbout.click(function() {
     });
 })
 
-navPortfolio.click(function() {
+navPortfolio.click(() => {
     
     // Get the height of the navbar
     navbarHeight = navLinkContainer[0].clientHeight;
@@ -181,7 +182,7 @@ navPortfolio.click(function() {
     });
 })
     
-navContact.click(function() {
+navContact.click(() => {
 
     // Get the height of the navLinkContainer
     navbarHeight = navLinkContainer[0].clientHeight;
