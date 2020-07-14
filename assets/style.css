@@ -79,7 +79,8 @@ button {
     color: white;
     font-size: 1.3em;
 }
-.header-title, .header-subtitle, h2 {
+
+.header-title, .header-subtitle, h2, .project h3 {
     text-align: center;
 }
 
