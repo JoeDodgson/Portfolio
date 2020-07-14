@@ -1,37 +1,37 @@
 // Store page elements as variables
-var body = $("body");
-var navbar = $("#navbar");
-var about = $("#about");
-var portfolio = $("#portfolio");
-var contact = $("#contact");
-var main = $("main");
-var footer = $("footer");
-var navLinkContainer = $("#nav-link-container");
-var navbarSpacing = $("#navbar-spacing");
-var navAbout = $("#nav-about");
-var navPortfolio = $("#nav-portfolio");
-var navContact = $("#nav-contact");
-var headerTitleText = $("#header-title-text");
-var headerSubtitleText = $("#header-subtitle-text");
-var headerIcons = $("#header-icons-container");
-var footerCopyright = $("footer p");
+const body = $("body");
+const navbar = $("#navbar");
+const about = $("#about");
+const portfolio = $("#portfolio");
+const contact = $("#contact");
+const main = $("main");
+const footer = $("footer");
+const navLinkContainer = $("#nav-link-container");
+const navbarSpacing = $("#navbar-spacing");
+const navAbout = $("#nav-about");
+const navPortfolio = $("#nav-portfolio");
+const navContact = $("#nav-contact");
+const headerTitleText = $("#header-title-text");
+const headerSubtitleText = $("#header-subtitle-text");
+const headerIcons = $("#header-icons-container");
+const footerCopyright = $("footer p");
 
 // Declare variables for typewrite function
-var i = 0;
-var tWElement;
-var elementText = "";
-var elementTextBuilder = "";
-var speed = 200;
+let i = 0;
+let tWElement;
+let elementText = "";
+let elementTextBuilder = "";
+let speed = 200;
 
 // Declare other variables
-var navbarOffset;
-var aboutOffset;
-var portfolioOffset;
-var contactOffset;
-var bodyHeight;
-var windowHeight;
-var navbarHeight;
-var unhidePage = false;
+let navbarOffset;
+let aboutOffset;
+let portfolioOffset;
+let contactOffset;
+let bodyHeight;
+let windowHeight;
+let navbarHeight;
+let unhidePage = false;
 
 // When the document loads, execute stickyNavbar
 $(document).ready( function() {
