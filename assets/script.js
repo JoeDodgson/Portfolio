@@ -14,6 +14,7 @@ var navContact = $("#nav-contact");
 var headerTitleText = $("#header-title-text");
 var headerSubtitleText = $("#header-subtitle-text");
 var headerIcons = $("#header-icons-container");
+var footerCopyright = $("footer p");
 
 // Declare variables for typewrite function
 var i = 0;
@@ -38,6 +39,7 @@ $(document).ready( function() {
     typeWriterPrepare();
     stickyNavbar();
     updateNavbar();
+    updateFooter();
 });
 
 function unhidePageNow() {
@@ -140,6 +142,11 @@ function updateNavbar() {
         navContact.removeClass("nav-current");
         navContact.addClass("nav-not-current");
     }
+}
+
+function updateFooter() {
+    const currentYear = (new Date().getFullYear());
+    footerCopyright.html(`© Joe Dodgson ${currentYear}`);
 }
 
 navAbout.click(function() {
