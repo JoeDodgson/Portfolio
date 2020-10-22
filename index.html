@@ -1,248 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joe Dodgson</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css" type="text/css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" type="text/css" />
+  </head>
+  <body>
     <header>
-        <!-- Header title (Joe Dodgson) across top of page -->
-        <div class="header-title">
-            <h1 id="header-title-text" class="vis-hidden">Joe Dodgson</h1>
+      <!-- Header title (Joe Dodgson) across top of page -->
+      <div class="header-title">
+        <h1 id="header-title-text" class="vis-hidden">Joe Dodgson</h1>
+      </div>
+
+      <div class="header-subtitle">
+        <p id="header-subtitle-text" class="vis-hidden">
+          Full stack web developer, based in Birmingham (UK)
+        </p>
+      </div>
+
+      <!-- Github and LinkedIn icons -->
+      <div id="header-icons-container" class="vis-hidden">
+        <a
+          href="https://www.linkedin.com/in/joe-dodgson/"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/JoeDodgson/"
+          target="_blank"
+          class="fab fa-github-square"
+        ></a>
+      </div>
+
+      <nav id="navbar" class="vis-hidden">
+        <div id="nav-link-container" class="clearfix">
+          <div id="nav-spacing">
+            <p>.</p>
+          </div>
+          <div id="nav-about" class="nav-link nav-current">
+            <p>About</p>
+          </div>
+          <div id="nav-portfolio" class="nav-link nav-not-current">
+            <p>Portfolio</p>
+          </div>
+          <div id="nav-contact" class="nav-link nav-not-current">
+            <p>Contact</p>
+          </div>
+          <div id="nav-fill">
+            <p>.</p>
+          </div>
         </div>
-        
-        <div class="header-subtitle">
-            <p id="header-subtitle-text" class="vis-hidden">Full stack web developer, based in Birmingham (UK)</p>
-        </div>
+      </nav>
 
-        <!-- Github and LinkedIn icons -->
-        <div id="header-icons-container" class="vis-hidden">
-            <a href="https://www.linkedin.com/in/joe-dodgson/" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://github.com/JoeDodgson/" target="_blank" class="fab fa-github-square"></a>
-        </div>
-
-        <nav id="navbar" class="vis-hidden">
-            <div id="nav-link-container" class="clearfix">
-                <div id="nav-spacing">
-                    <p>.</p>
-                </div>
-                <div id="nav-about" class="nav-link nav-current">
-                    <p>About</p>
-                </div>
-                <div id="nav-portfolio" class="nav-link nav-not-current">
-                    <p>Portfolio</p>
-                </div>
-                <div id="nav-contact" class="nav-link nav-not-current">
-                    <p>Contact</p>
-                </div>
-                <div id="nav-fill">
-                    <p>.</p>
-                </div>
-            </div>
-
-        </nav>
-        
-        <!-- Placeholder element to ensure spacing between navbar and content below -->
-        <div id="navbar-spacing" class="sticky"></div>
-
+      <!-- Placeholder element to ensure spacing between navbar and content below -->
+      <div id="navbar-spacing" class="sticky"></div>
     </header>
-    
+
     <main class="vis-hidden">
+      <!-- About me section -->
+      <section class="clearfix" id="about">
+        <div>
+          <h2>Hi and welcome to my portfolio</h2>
+        </div>
 
-        <!-- About me section -->
-        <section class="clearfix" id="about">
-            <div>
-                <h2>Hi and welcome to my portfolio</h2>
+        <!-- Introduction -->
+        <div class="clearfix" id="intro">
+          <img
+            id="intro-image"
+            src="./assets/images/Joe-work-headshot.jpg"
+            alt="Joe Dodgson"
+          />
+          <h3 id="intro-heading">About me</h3>
+          <p>I work at Arup as Rail Engineer / Embedded Developer.</p>
+          <p>
+            I recently retrained as a full stack web developer by completing the
+            University of Birmingham's Coding Bootcamp.
+          </p>
+          <p>
+            My skillset includes HTML, CSS, JavaScript, jQuery, node.js, SQL,
+            MongoDB and React.
+          </p>
+          <p>
+            This website is a portfolio of the projects I have either
+            contributed to or built myself.
+          </p>
+        </div>
+
+        <!-- Background -->
+        <article class="about-article clearfix" id="background">
+          <h3>Background</h3>
+          <img
+            id="arup-image"
+            src="./assets/images/Arup-work.JPG"
+            alt="Working at Arup"
+          />
+          <p>
+            I worked as a Rail Engineer for 4 years, but in January 2020 I made
+            the decision to retrain as a web developer to pursue a career in
+            software development.
+          </p>
+          <p>
+            I love applying mathematical and logical reasoning to solve probelms
+            which is what drew me into software development.
+          </p>
+        </article>
+
+        <!-- Education -->
+        <article class="about-article clearfix" id="education">
+          <h3>Education</h3>
+          <img
+            id="university-image"
+            src="./assets/images/Joe-graduation.jpg"
+            alt="Graduation"
+          />
+          <ul>
+            <li>
+              Coding Bootcamp Full stack programme at University of Birmingham
+              (2020)
+            </li>
+            <li>
+              MEng Civil Engineering at University of Nottingham including 1
+              year of study abroad at UoN's Malaysia Campus and 1 year
+              industrial placement. First class honours (2011-2016)
+            </li>
+          </ul>
+        </article>
+
+        <!-- Experience -->
+        <article class="about-article clearfix" id="experience">
+          <h3>Experience</h3>
+          <img
+            id="experience-image"
+            src="./assets/images/Joe-InSAR-research-project.jpg"
+            alt="Experience"
+          />
+          <ul>
+            <li>
+              4 years - Rail Engineer / Embedded Developer, Arup (2016-present)
+            </li>
+            <li>
+              3 months - Research Placement, University of Nottingham (2015)
+            </li>
+            <li>
+              1 year - Undergraduate Design Engineer, North Midland Construction
+              (2014-2015)
+            </li>
+          </ul>
+          <div class="button-container">
+            <a
+              id="download-cv"
+              href="./assets/downloadable/Joe_Dodgson_CV_July_2020.pdf"
+              download="Joe_Dodgson_CV_July_2020.pdf"
+            >
+              <i class="fas fa-download"></i> DOWNLOAD CV
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Portfolio section -->
+      <section class="clearfix" id="portfolio">
+        <div>
+          <h2>My portfolio</h2>
+        </div>
+
+        <!-- Weather dashboard project -->
+        <article class="project">
+          <h3>Weather dashboard</h3>
+          <img
+            class="project-image"
+            id="weather-dashboard-image"
+            src="./assets/images/Weather-dashboard.JPG"
+            alt="Weather dashboard"
+          />
+          <p class="project-description">
+            The user searches for any city to see the current weather and a 5
+            day weather forecast. The page stores and displays the user's
+            searched cities.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>AJAX calls to retrieve API data</li>
+            <li>Interaction with local storage</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://joedodgson.github.io/Weather/"
+                target="_blank"
+                class="site-link"
+                >SEE SITE</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Weather"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <!-- Bookworm project -->
+        <article class="project">
+          <h3>Bookworm</h3>
+          <img
+            class="project-image"
+            id="bookworm-image"
+            src="./assets/images/Bookworm.JPG"
+            alt="Bookworm"
+          />
+          <p class="project-description">
+            A webpage for book lovers to find information about books and add
+            them to their read list. Users select a target read date for each
+            book they add to their read list.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>AJAX calls to retrieve API data</li>
+            <li>CSS Grid Layout framework</li>
+            <li>jQuery JavaScript library</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://joedodgson.github.io/Bookworm/home.html"
+                target="_blank"
+                class="site-link"
+                >SEE SITE</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Bookworm"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <!-- Code quiz project -->
+        <article class="project">
+          <h3>Code quiz</h3>
+          <img
+            class="project-image"
+            id="code-quiz-image"
+            src="./assets/images/Code-quiz.jpg"
+            alt="Code quiz"
+          />
+          <p class="project-description">
+            A multiple choice coding quiz, including a page which displays the
+            Highscores. The user submits their score which is added to other
+            scores in the local storage.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>Interaction with local storage</li>
+            <li>Use of setInterval and setTimeout JavaScript methods</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://joedodgson.github.io/Code-Quiz/"
+                target="_blank"
+                class="site-link"
+                >SEE SITE</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Code-Quiz"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <!-- Fitness buddy project -->
+        <article class="project">
+          <h3>Fitness buddy</h3>
+          <img
+            class="project-image"
+            id="fitness-buddy-image"
+            src="./assets/images/Fitness-buddy.JPG"
+            alt="Fitness-buddy"
+          />
+          <p class="project-description">
+            A website for gym-goers to find information about exercise
+            technique. Users login or sign up, search for exercises and can add
+            exercises to their favourites list.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>Express server</li>
+            <li>Heroku deployment</li>
+            <li>SQL database and Sequelize</li>
+            <li>Pug template engine</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://jdj-fitness-buddy.herokuapp.com/"
+                target="_blank"
+                class="site-link"
+                >SEE SITE</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Fitness-buddy"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <!-- Employee management system -->
+        <article class="project">
+          <h3>Staff management system</h3>
+          <img
+            class="project-image"
+            id="employee-management-image"
+            src="./assets/images/Employee-management-system.JPG"
+            alt="Employee-management-system"
+          />
+          <p class="project-description">
+            A node.js command line interface application which allows users to
+            interact with an employee database. Users can create, read, update
+            and delete data from the database.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>SQL database</li>
+            <li>MySQL node package</li>
+            <li>Inquirer node package</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Employee-Tracker"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <!-- Readme generator project -->
+        <article class="project">
+          <h3>Readme generator</h3>
+          <img
+            class="project-image"
+            id="readme-generator-image"
+            src="./assets/images/Readme-generator.JPG"
+            alt="Readme generator"
+          />
+          <p class="project-description">
+            A node.js command line interface application which allows users to
+            generate a readme.md file. Users specify a file name and the content
+            of each section of the readme.
+          </p>
+          <p>Technologies adopted:</p>
+          <ul class="technologies-list">
+            <li>Inquirer node package</li>
+            <li>File system (FS) node package</li>
+            <li>Validator node package</li>
+          </ul>
+          <div class="button-container">
+            <button>
+              <a
+                href="https://github.com/JoeDodgson/Readme-Generator"
+                target="_blank"
+                class="repo-link"
+                >SEE REPO</a
+              >
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Contact section -->
+      <section class="clearfix" id="contact">
+        <div>
+          <h2>Contact me</h2>
+        </div>
+        <div id="contact-container">
+          <div>
+            <p>
+              Feel free to reach out to me by email or connect with me via
+              socials
+            </p>
+          </div>
+          <div id="email-contact">
+            <h4>Email:</h4>
+            <a href="mailto:j.dodgson@live.co.uk">j.dodgson@live.co.uk</a>
+          </div>
+          <div id="socials-contact">
+            <h4>Socials:</h4>
+            <div id="contact-icons-container">
+              <a
+                href="https://www.linkedin.com/in/joe-dodgson/"
+                target="_blank"
+                class="fab fa-linkedin"
+              ></a>
+              <a
+                href="https://github.com/JoeDodgson/"
+                target="_blank"
+                class="fab fa-github-square"
+              ></a>
             </div>
-
-            <!-- Introduction -->
-            <div class="clearfix" id="intro">
-                <img id="intro-image" src="./assets/images/Joe-work-headshot.jpg" alt="Joe Dodgson">
-                <h3 id="intro-heading">About me</h3>
-                <p>I am currently developing skills as a full stack web developer at the University of Birmingham's Coding Bootcamp.</p>
-                <p>My skillset includes HTML, CSS, JavaScript, jQuery, node.js, SQL, MongoDB and React.</p>
-                <p>This website is a portfolio of the projects I have either contributed to or built myself.</p>
-            </div>
-
-            <!-- Background -->
-            <article class="about-article clearfix" id="background">
-                <h3>Background</h3>
-                <img id="arup-image" src="./assets/images/Arup-work.JPG" alt="Working at Arup">
-                <p>I worked as a Rail Engineer for 4 years, but in January 2020 I made the decision to retrain as a web developer to pursue a career in software development. I love applying mathematical and logical reasoning to solve probelms which is what drew me into software development.</p>
-            </article>
-
-            <!-- Education -->
-            <article class="about-article clearfix" id="education">
-                <h3>Education</h3>
-                <img id="university-image" src="./assets/images/Joe-graduation.jpg" alt="Graduation">
-                <ul>
-                    <li>Coding Bootcamp Full stack programme at University of Birmingham (2020)</li>
-                    <li>MEng Civil Engineering at University of Nottingham including 1 year of study abroad at UoN's Malaysia Campus and 1 year industrial placement. First class honours (2011-2016)</li>
-                </ul>
-            </article>
-
-            <!-- Experience -->
-            <article class="about-article clearfix" id="experience">
-                <h3>Experience</h3>
-                <img id="experience-image" src="./assets/images/Joe-InSAR-research-project.jpg" alt="Experience">
-                <ul>
-                    <li>4 years - Rail Engineer / Embedded Developer, Arup (2016-present)</li>
-                    <li>3 months - Research Placement, University of Nottingham (2015)</li>
-                    <li>1 year - Undergraduate Design Engineer, North Midland Construction (2014-2015)</li>
-                </ul>
-                <div class="button-container">
-                    <a id="download-cv" href="./assets/downloadable/Joe_Dodgson_CV_July_2020.pdf" download="Joe_Dodgson_CV_July_2020.pdf">
-                        <i class="fas fa-download"></i> DOWNLOAD CV
-                    </a>
-                </div>
-            </article>
-        </section>
-
-        <!-- Portfolio section -->
-        <section class="clearfix" id="portfolio">
-            <div>
-                <h2>My portfolio</h2>
-            </div>
-
-            <!-- Fitness buddy project -->
-            <article class="project">
-                <h3>Fitness buddy</h3>
-                <img class="project-image" id="fitness-buddy-image" src="./assets/images/Fitness-buddy.JPG" alt="Fitness-buddy">
-                <p class="project-description">A website for gym-goers to find information about exercise technique. Users login or sign up, search for exercises and can add exercises to their favourites list.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>Express server</li>
-                    <li>Heroku deployment</li>
-                    <li>SQL database and Sequelize</li>
-                    <li>Pug template engine</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://jdj-fitness-buddy.herokuapp.com/" target="_blank" class="site-link">SEE SITE</a></button>
-                    <button><a href="https://github.com/JoeDodgson/Fitness-buddy" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-            
-            <!-- Bookworm project -->
-            <article class="project">
-                <h3>Bookworm</h3>
-                <img class="project-image" id="bookworm-image" src="./assets/images/Bookworm.JPG" alt="Bookworm">
-                <p class="project-description">A webpage for book lovers to find information about books and add them to their read list. Users select a target read date for each book they add to their read list.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>AJAX calls to retrieve API data</li>
-                    <li>CSS Grid Layout framework</li>
-                    <li>jQuery JavaScript library</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://joedodgson.github.io/Bookworm/home.html" target="_blank" class="site-link">SEE SITE</a></button>
-                    <button><a href="https://github.com/JoeDodgson/Bookworm" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-
-            <!-- Employee management system -->
-            <article class="project">
-                <h3>Staff management system</h3>
-                <img class="project-image" id="employee-management-image" src="./assets/images/Employee-management-system.JPG" alt="Employee-management-system">
-                <p class="project-description">A node.js command line interface application which allows users to interact with an employee database. Users can create, read, update and delete data from the database.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>SQL database</li>
-                    <li>MySQL node package</li>
-                    <li>Inquirer node package</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://github.com/JoeDodgson/Employee-Tracker" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-            
-            <!-- Readme generator project -->
-            <article class="project">
-                <h3>Readme generator</h3>
-                <img class="project-image" id="readme-generator-image" src="./assets/images/Readme-generator.JPG" alt="Readme generator">
-                <p class="project-description">A node.js command line interface application which allows users to generate a readme.md file. Users specify a file name and the content of each section of the readme.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>Inquirer node package</li>
-                    <li>File system (FS) node package</li>
-                    <li>Validator node package</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://github.com/JoeDodgson/Readme-Generator" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-            <!-- Code quiz project -->
-            <article class="project">
-                <h3>Code quiz</h3>
-                <img class="project-image" id="code-quiz-image" src="./assets/images/Code-quiz.jpg" alt="Code quiz">
-                <p class="project-description">A multiple choice coding quiz, including a page which displays the Highscores. The user submits their score which is added to other scores in the local storage.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>Interaction with local storage</li>
-                    <li>Use of setInterval and setTimeout JavaScript methods</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://joedodgson.github.io/Code-Quiz/" target="_blank" class="site-link">SEE SITE</a></button>
-                    <button><a href="https://github.com/JoeDodgson/Code-Quiz" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-            <!-- Weather dashboard project -->
-            <article class="project">
-                <h3>Weather dashboard</h3>
-                <img class="project-image" id="weather-dashboard-image" src="./assets/images/Weather-dashboard.JPG" alt="Weather dashboard">
-                <p class="project-description">The user searches for any city to see the current weather and a 5 day weather forecast. The page stores and displays the user's searched cities.</p>
-                <p>Technologies adopted:</p>
-                <ul class="technologies-list">
-                    <li>AJAX calls to retrieve API data</li>
-                    <li>Interaction with local storage</li>
-                </ul>
-                <div class="button-container">
-                    <button><a href="https://joedodgson.github.io/Weather/" target="_blank" class="site-link">SEE SITE</a></button>
-                    <button><a href="https://github.com/JoeDodgson/Weather" target="_blank" class="repo-link">SEE REPO</a></button>
-                </div>
-            </article>
-            
-        </section>
-        
-        <!-- Contact section -->
-        <section class="clearfix" id="contact">
-            <div>
-                <h2>Contact me</h2>
-            </div>
-            <div id="contact-container">
-                <div>
-                    <p>Feel free to reach out to me by email or connect with me via socials</p>
-                </div>
-                <div id="email-contact">
-                    <h4>Email:</h4>
-                    <a href="mailto:j.dodgson@live.co.uk">j.dodgson@live.co.uk</a>
-                </div>
-                <div id="socials-contact">
-                    <h4>Socials:</h4>
-                    <div id="contact-icons-container">
-                        <a href="https://www.linkedin.com/in/joe-dodgson/" target="_blank" class="fab fa-linkedin"></a>
-                        <a href="https://github.com/JoeDodgson/" target="_blank" class="fab fa-github-square"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="vis-hidden">
-        <p></p>
+      <p></p>
     </footer>
-
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./assets/script.js"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./assets/script.js"></script>
 </html>
